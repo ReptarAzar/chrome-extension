@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+
+  "name": "SocialCode Creative Tool",
+  "description": "This extension shows advert analysis for the current page",
+  "version": "0.1",
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+
+  "content_scripts": [
+  {
+    "matches": ["https://www.facebook.com/*","https://twitter.com/*"],
+    "css": ["style.css"],
+    "js": ["jquery-2.2.1.min.js","content.js"]
+  }
+],
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ]
+}
