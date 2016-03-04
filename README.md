@@ -1,2 +1,8 @@
-# chrome-extension
-This extension shows advert analysis for the current page
+## Setup
+
+- Go to `chrome://extensions/`
+- Check developer mode
+- Click `Load unpacked extension...`
+- Upload this whole repo
+ 
+
